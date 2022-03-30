@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 }
 
-@media (min-width:300px) {
-  
+@media (min-width: 300px) {
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 3%;
   }
 
@@ -24,12 +23,66 @@
     border-bottom: 3px solid steelblue;
   }
 
+  /* SKILLS  */
+
+  #skills div {
+    display: flex;
+    padding: 2%;
+  }
+
+  /* justfy  */
+
+  #skills  aside {
+    width: 60vh;
+    height: 20vh;
+  }
+
+  #html-5 aside {
+    background: url("/img/html-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+
+  #css aside {
+    background: url("/img/css.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  #javaScript aside {
+    background: url("/img/javascript.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  }
+
+  #sass aside {
+    background: url("/img/sass.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  #wordpress aside {
+    background: url("/img/wordpress.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+  }
+
+  /* EDUCATION  */
+
   .education aside {
     width: 40vh;
     height: 25vh;
   }
-
-
 
   /* .education {
     display: flex;
@@ -43,10 +96,10 @@
     row-gap: 5vh;
   }
 
- .card {
-  align-items: center;
-  padding: 2%;
-}
+  .card {
+    align-items: center;
+    padding: 2%;
+  }
 
   #unam-card > aside {
     background: url("/img/UNAM.png");
@@ -76,14 +129,14 @@
     background-size: contain;
   }
 
-
-
   /* tamwood > aside    >에 대해서 다시 공부하기 */
-  
+
   /* CONTACT  */
-  .contact [type="text"],[type="email"], textarea {
+  .contact [type="text"],
+  [type="email"],
+  textarea {
     width: 90%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 3%;
   }
 
@@ -97,10 +150,10 @@
     background-color: steelblue;
   }
 
- .contact [class=d-flex] {
+  .contact [class="d-flex"] {
     justify-content: space-evenly;
   }
-  
+
   /* FOOTER  */
   footer {
     background-color: darkblue;
@@ -112,16 +165,7 @@
   footer > span {
     font-weight: bold;
   }
-
-
-
-
-
-
-
-
 }
-
 
 /* 
 1-plan the sections from your page. 
@@ -133,4 +177,3 @@
  f) About 
  g) Header
  */
-
