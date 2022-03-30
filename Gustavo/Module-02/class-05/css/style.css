@@ -9,14 +9,36 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+  }
+
+  section {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   
+  /* CONTACT  */
   .contact [type="text"],[type="email"], textarea {
-    width: 95%;
+    width: 90%;
     font-family: 'Montserrat', sans-serif;
     padding: 3%;
   }
+
+  .btn {
+    background-color: darkblue;
+    font-weight: bold;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: steelblue;
+  }
+
+ .contact [class=d-flex] {
+    justify-content: space-evenly;
+  }
   
+  /* FOOTER  */
   footer {
     background-color: darkblue;
     color: white;
