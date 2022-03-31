@@ -26,6 +26,25 @@
   /* 구글에서 클릭하면 새창으로 열리게 설정  */
   /* flex-wrap  */
 
+  .work-experience {
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+
+  .work-experience h3 {
+    font-weight: 600;
+    color: darkslategray;
+  }
+
+  .work-experience h4 {
+    
+  }
+
+ .work-experience > article {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+  }
+
   #projectone p {
     line-height: 2;
   }
