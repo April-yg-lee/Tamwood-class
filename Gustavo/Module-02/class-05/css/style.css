@@ -27,8 +27,6 @@
     padding: 3%;
   }
 
-  /* 구글에서 클릭하면 새창으로 열리게 설정  */
-  /* flex-wrap  */
 
   .work-experience {
     flex-direction: column;
