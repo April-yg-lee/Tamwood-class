@@ -23,6 +23,61 @@
     border-bottom: 3px solid steelblue;
   }
 
+  /* 구글에서 클릭하면 새창으로 열리게 설정  */
+  /* flex-wrap  */
+
+  #projectone p {
+    line-height: 2;
+  }
+
+
+  #projectone > div > aside {
+    margin-right: 5%;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    color: white;
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #projecttwo p {
+    line-height: 2;
+  }
+
+  #projecttwo > div > aside {
+    margin-right: 5%;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    color: white;
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #projectthree p {
+    line-height: 2;
+  }
+
+  #projectthree > div > aside {
+    margin-right: 5%;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    color: white;
+    background-color: gray;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
   /* SKILLS  */
 
   #skills div {
