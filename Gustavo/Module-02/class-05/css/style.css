@@ -300,14 +300,51 @@
     width: 60%;
     padding: 1%;
   }
+}
 
+@media (min-width:1000px) {
+  /* ABOUT  */
+  .about > p {
+    width: 90%;
+    padding-top: 0%;
+  }
 
+  /* WORK EXPERIENCE  */
+  .work-experience {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
+  .work-experience article {
+    width: 30%;
+    font-size: 24px;
+  }
 
+  /* SKILLS  */
+  .skills > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
+  #skills > div > aside {
+    border: 1px solid red;
+    width: 20%;
+    padding: 5%;
+  }
+  
+  /* EDUCATION  */
 
-
-
+  .education .card {
+    width: 20%;
+  }
+  
+  /* FOOTER  */
+  .footer {
+    padding: 3%;
+    font-size: 24px;
+  }
 }
 
 /* 
