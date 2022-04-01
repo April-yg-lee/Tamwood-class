@@ -244,7 +244,25 @@
 
 @media (min-width: 700px) {
 
+  /* EDUCATION  */
+  .education {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .education aside {
+    padding: 0%;
+    width: 100%;
+  }
+
+  .education > .card {
+    width: 40%;
+  }
+
+  /* CONTACT  */
   .contact {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
