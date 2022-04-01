@@ -244,6 +244,17 @@
 
 @media (min-width: 700px) {
 
+  /* SKILLS  */
+
+  .skills > div > p {
+  display: flex;
+  align-items: center;
+}
+
+  .skills p {
+    font-size: 24px;
+  }
+
   /* EDUCATION  */
   .education {
     justify-content: space-around;
