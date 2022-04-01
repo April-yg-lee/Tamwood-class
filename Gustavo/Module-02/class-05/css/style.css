@@ -5,7 +5,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: fixed;
+}
+
 @media (min-width: 300px) {
+
+
   body {
     font-family: "Montserrat", sans-serif;
     padding: 3%;
@@ -303,6 +309,42 @@
 }
 
 @media (min-width:1000px) {
+
+  /* NAVIGATION  */
+
+  .navigation-menu {
+    display: block; 
+    width: 94%;
+    position: fixed;
+    width: 94%;
+    z-index: 1;
+  }
+
+  .navigation-menu ul {
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  .navigation-menu li {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    background-color: rgba(100, 100, 100)
+  }
+
+  .navigation-menu a {
+    width: 100%;
+    text-decoration: none;
+    padding: 5%;
+    color: whitesmoke ;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .navigation-menu a:hover {
+    background-color: steelblue;
+  }
 
   /* HEADER  */
 
