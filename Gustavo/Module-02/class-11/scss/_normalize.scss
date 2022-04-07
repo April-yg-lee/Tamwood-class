@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $fontFamily;
+}
+
+main {
+    padding: 3%;
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+section > h2 {
+    width: 90%;
+    color: $headerLvl2;
+    font-size: 36px;
+    border-bottom: 3px solid $headerLvl2;
+    text-transform: uppercase;
+}

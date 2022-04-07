@@ -1,0 +1,51 @@
+body {
+  background-color: #38928e;
+  margin-left: 90px;
+}
+
+.container {
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: lightblue;
+}
+
+.container h2 {
+  font-size: 48px;
+  color: brown;
+}
+
+.container blockquote {
+  background-color: lime;
+}
+
+.btn-group {
+  padding: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-group button {
+  width: 20vh;
+  height: 20vh;
+  font-size: 18px;
+  color: orange;
+  font-family: Arial;
+}
+
+.box-aside {
+  background-color: burlywood;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-aside aside {
+  width: 20vh;
+  height: 20vh;
+  border: 3px solid purple;
+}
+/*# sourceMappingURL=style.css.map */

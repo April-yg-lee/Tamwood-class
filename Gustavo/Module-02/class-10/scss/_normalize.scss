@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: fixed;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+main {
+  padding: 3%;
+
+}
+
+section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

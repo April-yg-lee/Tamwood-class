@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: fixed;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 3%;
+}
+
+section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+@media (min-width: 300px) {
+  .navigation-menu {
+    display: none;
+  }
+  .header [class*="bg-"] {
+    width: 100%;
+    height: 45vh;
+  }
+  .header .bg-1 {
+    background: url("/img/header-1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header .bg-2 {
+    background: url("/img/header-2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header .bg-3 {
+    background: url("/img/header-3.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .about > p {
+    padding: 3%;
+  }
+  .work-experience {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 5vh;
+  }
+  .work-experience > h3 {
+    font-weight: 600;
+    color: darkslategray;
+  }
+  .work-experience > article {
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    padding: 2px;
+  }
+  .projects p {
+    line-height: 2;
+  }
+  .projects div > aside {
+    margin-right: 3%;
+    margin-bottom: 0.5%;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    border: 0px solid transparent;
+    color: white;
+    font-weight: 600;
+    background-color: gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 5vh;
+    column-Gap: 0px;
+  }
+  .skills > div > aside {
+    width: 15vh;
+    height: 15vh;
+    border: 0px solid transparent;
+    padding: 15%;
+  }
+  .skills #html-5 > aside {
+    background: url("/img/html-5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .skills #css > aside {
+    background: url("/img/css.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .skills #javaScript > aside {
+    background: url("/img/javascript.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .skills #sass > aside {
+    background: url("/img/sass.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .skills #wordpress > aside {
+    background: url("/img/wordpress.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .skills > p {
+    padding-left: 4%;
+  }
+  .education {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 5vh;
+    column-Gap: 0px;
+  }
+  .education aside {
+    width: 15vh;
+    height: 15vh;
+    border: 0px solid transparent;
+    width: 45vh;
+    height: 25vh;
+  }
+  .education #tamwood-card > aside {
+    background: url("/img/Tamwood.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .education #chula-card > aside {
+    background: url("/img/Chula.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .education #seoul-card > aside {
+    background: url("/img/seoul-national-university.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .education #unam-card > aside {
+    background: url("/img/UNAM.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contact [type="text"], .contact [type="email"], .contact textarea {
+    width: 90%;
+    padding: 3%;
+  }
+  .contact > form > [class="d-flex"] {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .btn {
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+  }
+  .btn:hover {
+    background-color: steelblue;
+  }
+  .footer {
+    background-color: darkblue;
+    color: white;
+    padding: 5%;
+    text-align: center;
+  }
+  .footer > span {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 700px) {
+  .about > p {
+    line-height: 1.5;
+    font-size: 24px;
+    padding-bottom: 0%;
+  }
+  .skills {
+    font-size: 24px;
+  }
+  .skills p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skills #html-5 > aside,
+  .skills #css > aside,
+  .skills #javascript > aside,
+  .skills #wordpress > aside {
+    padding: 10%;
+  }
+  .education {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .education .card {
+    width: 40%;
+  }
+  .education aside {
+    padding: 0%;
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 0;
+    column-Gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact form {
+    width: 80%;
+  }
+  .contact label {
+    width: 30%;
+  }
+  .contact [type="text"], .contact [type="email"] {
+    width: 60%;
+    padding: 1%;
+  }
+  .contact div {
+    padding: 1%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

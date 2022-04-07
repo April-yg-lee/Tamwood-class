@@ -1,0 +1,82 @@
+@import '/scss/assets/variable';
+// @import '/scss/assets/_variable.scss'; 와 동일한 것 
+@import '/scss/assets/mixins.scss';
+@import '/scss/assets/mobile';
+@import '/scss/assets/normalize';
+
+
+// SCSS, SASS, and LESS they are CSS preprocessors.
+
+// They are created to make the styling easier.
+
+// The main difference between them are:
+
+// Classes, tags, and IDs from SCSS are created like this: 
+
+// .container {
+//   color: white;
+//   border: 1px solid yellow;
+//   background-color: black;
+// }
+
+// .container 
+//   color: white
+//   border: 1px solid yellow
+//   background-color: black
+
+//   $color-1 : rgba(150,150,200)
+//   $color-2 : rgba(100,120,100)
+
+//   color: $color-1;
+
+
+
+  .container {
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: $divBg;
+
+    h2 {
+      font-size: $defaultHeader;
+      color: $defaultSecondHeaderColor ;
+    }
+
+    blockquote {
+      background-color: $blockQuoteBg;
+    }
+  }
+
+  .btn-group {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: $defaultBoxWidth;
+      height: $defaultBoxHeight;
+      font-size: $defaultFontsize;
+      color: $orange;
+      font-family: $fontFamily;
+    }
+  }
+
+ 
+  .box-aside {
+    background-color: burlywood;
+    display: flex;
+
+    aside {
+      width: $defaultBoxWidth;
+      height: $defaultBoxHeight;
+      border: 3px solid purple;
+    
+      @include bg-picture;
+      }
+  
+
+    //  & :nth-child(2) 
+    //     background-color: $btnBgSuccess;
+    }
+
+    
+  }

@@ -1,0 +1,161 @@
+
+
+@media (min-width: $defaultMobileSize) {
+  
+  .navigation-menu {
+    display: none;
+  }
+
+  .header {
+    [class*="bg-"] {
+      width: 100%;
+      height: 45vh;
+    }
+
+    .bg-1 {
+      @include bg-pic("/img/header-1.jpg");
+    }
+    .bg-2 {
+      @include bg-pic("/img/header-2.jpg");
+    }
+    .bg-3 {
+      @include bg-pic("/img/header-3.jpg");
+    }
+
+  }
+  .about > p {
+    padding: 3%;
+  }
+
+  .work-experience {
+    flex-direction: column;
+    row-gap: 5vh;
+
+    > h3 {
+      font-weight: 600;
+      color: $headerLv13
+    }
+
+    > article {
+      border: 2px solid $workExperienceBorder;
+      border-radius: 2px;
+      padding: 2px;
+    }
+  }
+
+  .projects {
+    p {
+      line-height: 2;
+    }
+
+    div > aside {
+      margin-right: 3%;
+      margin-bottom: 0.5%;
+
+      float: left;
+      @include aside-box();
+      color: $projectAsideFont;
+      font-weight: 600;
+      background-color: $projectAsideBg;
+
+      display: flex;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .skills {
+    @include flex-behavior(flex,column,5vh,0px);
+
+    > div > aside {
+      @include aside-box();
+      padding: 15%;
+    }
+
+    #html-5 > aside {
+      @include bg-pic("/img/html-5.png",cover)
+    }
+    #css > aside {
+      @include bg-pic("/img/css.png",cover)
+    }
+    #javaScript > aside {
+      @include bg-pic("/img/javascript.png",cover)
+    }
+    #sass > aside {
+      @include bg-pic("/img/sass.png",cover)
+    }
+
+    #wordpress > aside {
+      @include bg-pic ("/img/wordpress.png",cover)
+    }
+    > p {
+      padding-left: 4%;
+    }
+
+  }
+
+
+
+  .education {
+    @include flex-behavior(flex,column,5vh,0px);
+
+    aside {
+      @include aside-box();
+      width: 45vh;
+      height: 25vh;
+    }
+
+    #tamwood-card > aside {
+      @include bg-pic("/img/Tamwood.png");
+    }
+
+    #chula-card > aside {
+      @include bg-pic("/img/Chula.png");
+    }
+
+    #seoul-card > aside {
+      @include bg-pic("/img/seoul-national-university.png");
+    }
+
+    #unam-card > aside {
+      @include bg-pic("/img/UNAM.png");
+    }
+  }
+
+
+  .contact {
+    [type="text"], [type="email"], textarea {
+      width: 90%;
+      padding: 3%;
+    }
+
+    & > form > [class="d-flex"] {
+      justify-content: space-evenly;
+    }
+  }
+
+
+  .btn {
+    background-color: $btnBg;
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $btnBgHover;
+    }
+  }
+  
+  .footer {
+    background-color: $footerBg;
+    color: white;
+    padding: 5%;
+    text-align: center;
+
+// & means Father of span 
+    & > span {
+      font-weight: bold;
+    }
+  }
+
+
+}
