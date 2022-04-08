@@ -1,0 +1,80 @@
+@mixin flexBox(
+  $direction : row,
+  $justifyContent : center,
+  $alignItems : center,
+  $wrap : no-wrap,
+  $rowGap : 0,
+  $columnGap : 0
+  ){
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-flow: $direction $wrap;
+    row-gap : $rowGap;
+    column-gap: $columnGap;
+}
+
+@mixin borderBox(
+  $borderWidth: 1px,
+  $borderStyle: solid,
+  $borderColor: gray,
+  $borderRadius: 0
+) {
+  border-width: $borderWidth;
+  border-style: $borderStyle;
+  border-color: $borderColor;
+  border-radius: $borderRadius;
+}
+
+@mixin bgPic(
+  $background,
+  $bgPosition : center,
+  $bgSize : contain,
+  $bgRepeat : no-repeat
+) {
+  background: url($background);
+  background-position: $bgPosition;
+  background-size: $bgSize;
+  background-repeat: $bgRepeat;
+}
+
+
+// @mixin coloring {
+//   background-color: lightcoral;
+//   color: red;
+// }
+
+// div {
+// @include coloring;
+// }
+
+
+
+// @mixin circle($width, $height, $color) {
+//   width: $width;
+//   height: $height;
+//   background: $color;
+//   border-radius: 50%;
+// }
+
+// .circle-div {
+//   @include circle(350px,350px,red);
+// }
+
+
+
+
+
+// @mixin centralize (
+//   $display : flex, 
+//   $justifyContent : center,
+//   $alignItems : center,
+// ) {
+//   display: $display;
+//   justify-content: $justifyContent;
+//   align-items: $alignItems;
+// }
+
+// circle {
+//   @include centralize
+// }

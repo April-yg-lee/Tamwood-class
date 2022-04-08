@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 300px) {
+  body p {
+    color: skyblue;
+  }
+}
+/*# sourceMappingURL=style.css.map */

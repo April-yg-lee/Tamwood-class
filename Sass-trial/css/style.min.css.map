@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACX,AEHD,MAAM,EAAE,SAAS,EAAE,KAAK,EACtB,AAEE,IAFE,CAEF,CAAC,AAAC,CACA,KAAK,CHJD,OAAO,CGKZ",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/_variables.scss",
+        "../scss/_normalize.scss",
+        "../scss/_mixins.scss",
+        "../scss/devices/_mobile.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
