@@ -1,4 +1,9 @@
 @media (min-width: 300px) {
+
+  h2 {
+    font-size: 32px;
+  }
+
   header {
     @include bgPic("/img/mountains.png",center,cover);
     text-align: center;

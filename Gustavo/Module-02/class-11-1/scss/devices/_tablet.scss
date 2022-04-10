@@ -1,0 +1,71 @@
+@media (min-width:800px) {
+
+  h2 {
+    font-size: 45px;
+  }
+
+// SERVICE
+.service-basket {
+  @include flexBox(row, center, center, wrap);
+  
+  .service-box {
+    background-color: $bgColorLightGray;
+    padding: 5%;
+    width: 40%;
+  }
+}
+
+// GALLERY 
+.grid-gallery {
+  .gallery-bottom {
+    @include flexBox(row,space-between,center,wrap,10px,10px)
+  
+    [class*=gallery-box] {
+      width: 39%;
+    }
+  }
+}
+
+// SUBSCRIBE 
+
+  .subscribe {
+    h2, p, form {
+      width: 100%;
+      padding: 0;
+    }
+
+    p {
+      font-size: large;
+    }
+
+    [type="submit"] {
+      width: 20%;
+    }
+  }
+
+
+  // CONTACT 
+  .contact {
+    form {
+      @include flexBox(row,center,center,wrap,20px,20px);
+
+      input, textarea {
+        font-size: 20px;
+      }
+    }
+
+    [name="name"],
+    [name="email"] {
+      width: 38.5%;
+    }
+  }
+
+  // FOOTER 
+  .footer {
+    font-size: 20px;
+    .icons {
+      font-size: 30px;
+    }
+  }
+
+}

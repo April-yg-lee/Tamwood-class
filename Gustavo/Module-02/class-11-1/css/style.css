@@ -23,11 +23,13 @@ h2 {
   text-transform: capitalize;
   width: 100%;
   border-bottom: 3px solid #6cc0f7;
-  font-size: 32px;
   font-weight: 600;
 }
 
 @media (min-width: 300px) {
+  h2 {
+    font-size: 32px;
+  }
   header {
     background: url("/img/mountains.png");
     background-position: center;
@@ -372,6 +374,97 @@ h2 {
   .footer .icons a {
     color: #777777;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 800px) {
+  h2 {
+    font-size: 45px;
+  }
+  .service-basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    row-gap: 0;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .service-basket .service-box {
+    background-color: #d7d5d5;
+    padding: 5%;
+    width: 40%;
+  }
+  .grid-gallery .gallery-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    row-gap: 10px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .grid-gallery .gallery-bottom [class*=gallery-box] {
+    width: 39%;
+  }
+  .subscribe h2, .subscribe p, .subscribe form {
+    width: 100%;
+    padding: 0;
+  }
+  .subscribe p {
+    font-size: large;
+  }
+  .subscribe [type="submit"] {
+    width: 20%;
+  }
+  .contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .contact form input, .contact form textarea {
+    font-size: 20px;
+  }
+  .contact [name="name"],
+  .contact [name="email"] {
+    width: 38.5%;
+  }
+  .footer {
+    font-size: 20px;
+  }
+  .footer .icons {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
