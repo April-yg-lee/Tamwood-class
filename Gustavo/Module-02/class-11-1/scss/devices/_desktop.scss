@@ -1,0 +1,66 @@
+@media (min-width:1000px) {
+  
+
+// HEADER 
+header {
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+
+  
+  div {
+    @include flexBox(row,center,center,wrap,0px,10px);
+    
+    :first-child {
+      padding: 3%;
+    }
+    
+    :last-child {
+      padding: 3.5%;
+    }
+  }
+}
+
+
+// GALLERY 
+.grid-gallery {
+  .gallery-bottom {
+    @include flexBox(row,space-between,center,wrap,10px,10px)
+  
+    [class*=gallery-box] {
+      width: 22%;
+      padding: 1%;
+      h3 {
+        padding: 3%;
+      }
+
+      p {
+        padding: 3%;
+        font-size: large;
+      }
+
+      aside {
+        height: 140px;
+      }
+    }
+
+  }
+
+
+
+}
+
+// CONTACT 
+
+.contact {
+ 
+  [name="name"],
+  [name="email"],
+  [name="subject"] {
+    width: 23.3%;
+  }
+}
+}
